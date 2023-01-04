@@ -13,6 +13,9 @@
 		BC963DBA2953A3B3000A37F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC963DB92953A3B3000A37F8 /* Preview Assets.xcassets */; };
 		BC963DBC2953A3B3000A37F8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC963DBB2953A3B3000A37F8 /* Persistence.swift */; };
 		BC963DBF2953A3B3000A37F8 /* Notas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC963DBD2953A3B3000A37F8 /* Notas.xcdatamodeld */; };
+		BC963DC82953A4C0000A37F8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC963DC72953A4C0000A37F8 /* ViewModel.swift */; };
+		BC963DCA2953A564000A37F8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC963DC92953A564000A37F8 /* Home.swift */; };
+		BC963DCC2953A5B2000A37F8 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC963DCB2953A5B2000A37F8 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		BC963DB92953A3B3000A37F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC963DBB2953A3B3000A37F8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		BC963DBE2953A3B3000A37F8 /* Notas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notas.xcdatamodel; sourceTree = "<group>"; };
+		BC963DC72953A4C0000A37F8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BC963DC92953A564000A37F8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		BC963DCB2953A5B2000A37F8 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,8 @@
 		BC963DB12953A3B1000A37F8 /* Notas */ = {
 			isa = PBXGroup;
 			children = (
+				BC963DC62953A492000A37F8 /* View */,
+				BC963DC52953A486000A37F8 /* ViewModel */,
 				BC963DB22953A3B1000A37F8 /* NotasApp.swift */,
 				BC963DB42953A3B1000A37F8 /* ContentView.swift */,
 				BC963DB62953A3B3000A37F8 /* Assets.xcassets */,
@@ -71,6 +79,23 @@
 				BC963DB92953A3B3000A37F8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC963DC52953A486000A37F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC963DC72953A4C0000A37F8 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC963DC62953A492000A37F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC963DC92953A564000A37F8 /* Home.swift */,
+				BC963DCB2953A5B2000A37F8 /* AddView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC963DCC2953A5B2000A37F8 /* AddView.swift in Sources */,
+				BC963DC82953A4C0000A37F8 /* ViewModel.swift in Sources */,
 				BC963DBC2953A3B3000A37F8 /* Persistence.swift in Sources */,
 				BC963DB52953A3B1000A37F8 /* ContentView.swift in Sources */,
 				BC963DB32953A3B1000A37F8 /* NotasApp.swift in Sources */,
+				BC963DCA2953A564000A37F8 /* Home.swift in Sources */,
 				BC963DBF2953A3B3000A37F8 /* Notas.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
