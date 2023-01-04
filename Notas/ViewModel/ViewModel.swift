@@ -31,4 +31,14 @@ class ViewModel : ObservableObject{
         }
     }
     
+    func deleteData(item:Notas, context: NSManagedObjectContext){
+        context.delete(item)
+        
+        do{
+            try context.save()
+            print("Elimino")
+        }catch let error as NSError{
+            print("No Elimino", error.localizedDescription)
+        }
+    }
 }
