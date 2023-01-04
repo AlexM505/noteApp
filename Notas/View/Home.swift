@@ -15,6 +15,12 @@ struct Home: View {
                   sortDescriptors: [NSSortDescriptor(key: "fecha", ascending: true)],
                   animation: .spring()) var results : FetchedResults<Notas>
     
+    //Predicado
+//    @FetchRequest(entity: Notas.entity(),
+//                  sortDescriptors: [],
+//                  predicate: NSPredicate(format:"fecha >= %@",Date() as CVarArg),
+//                  animation: .spring()) var results : FetchedResults<Notas>
+    
     var body: some View{
         NavigationView{
             List{
