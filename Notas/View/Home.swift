@@ -24,7 +24,7 @@ struct Home: View {
                         Text(item.fecha ?? Date(), style: .date)
                     }.contextMenu(menuItems: {
                         Button(action:{
-                            print("click editar")
+                            model.sendData(item: item)
                         }){
                             Label(title:{
                                 Text("Editar")
